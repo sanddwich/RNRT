@@ -1,0 +1,2 @@
+export const SET_APP_ERROR = '@APP/SET_APP_ERROR'
+export const SET_APP_LOADING = '@APP/SET_APP_LOADING'
