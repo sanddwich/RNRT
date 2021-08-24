@@ -1,12 +1,14 @@
 import { StyleSheet } from 'react-native'
+import store from '../../../Redux'
+
 
 const MainHeaderStyles = StyleSheet.create({
   main: {
     height: 80,
-    paddingTop: 15,
+    paddingTop: 25,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#1BA39C',
+    backgroundColor: store.getState().app.config.theme.bgColor1,
     width: '100%',
   }
 })

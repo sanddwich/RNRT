@@ -10,6 +10,14 @@ const initialState: AppState = {
   loading: false,
   config: {
     appName: 'DefaultApp',
+    theme: {
+      bgColor1: "#0B8389",
+      bgColor2: "#FFFFFF",
+      bgColor3: "#1BA39C",
+      bgColor4: "#16A086",
+      textColor1: "#FFFFFF",
+      textColor2: "#000000",
+    }
   },
 }
 
