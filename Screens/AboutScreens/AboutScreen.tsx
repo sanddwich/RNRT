@@ -3,19 +3,19 @@ import { View } from 'react-native'
 import { connect } from 'react-redux'
 import { RootState } from '../../Redux'
 import { AppState } from '../../Redux/interfaces/interfaces'
-import MainHeader from './MainHeader/MainHeader'
-import MainLayoutStyles from './MainLayoutStyles'
+import AboutScreenStyles from './AboutScreenStyles'
 import {setAppLoading} from '../../Redux/actions/app'
+import H2 from '../../StyledComponents/H2/H2'
 
-interface MainLayoutProps {
+interface AboutScreenProps {
   app: AppState,
   setAppLoading: (loading: boolean) => void
 }
 
-const MainLayout = (props: MainLayoutProps) => {
+const AboutScreen = (props: AboutScreenProps) => {
   return (
-    <View style={MainLayoutStyles.main}>
-      <MainHeader />
+    <View style={AboutScreenStyles.main}>
+      <H2 bold color="#000000">AboutScreen</H2>
     </View>
   )
 }
@@ -31,4 +31,4 @@ const mapStateToProps = (state: RootState) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainLayout)
+export default connect(mapStateToProps, mapDispatchToProps)(AboutScreen)

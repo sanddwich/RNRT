@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-
 import { StyleSheet, Text, View } from 'react-native'
 import AppLoading from 'expo-app-loading'
 import GetFonts from './functions/GetFonts'
 import AppStyles from './AppStyles'
-import MainLayout from './Layouts/MainLayout/MainLayout'
+import MainScreen from './Screens/MainScreen/MainScreen'
 import store from './Redux'
 import { Provider } from 'react-redux'
 
@@ -20,7 +19,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <View style={AppStyles.main}>
-        <MainLayout />
+        <MainScreen />
       </View>
     </Provider>
   )

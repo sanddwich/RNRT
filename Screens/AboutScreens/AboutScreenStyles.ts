@@ -1,14 +1,14 @@
 import { StyleSheet } from 'react-native'
 
-const AppStyles = StyleSheet.create({
+const AboutScreenStyles = StyleSheet.create({
   main: {
     flex: 1,
     flexDirection: 'row',
+    width: '100%',
+    height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffffff',
-    color: '#000000',
   }
 })
 
-export default AppStyles
+export default AboutScreenStyles
